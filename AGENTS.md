@@ -5,8 +5,9 @@ The user requested that all project changes be synchronized to https://github.co
 For each authorized change in this repository:
 
 1. Keep source and documentation changes in this repository; never add `node_modules`, build output, installers, screenshots, local data, API keys, `.env` files, or credentials.
-2. Run appropriate checks. Do not claim a sync succeeded unless the change is visible on GitHub.
-3. Commit the change and push it to `origin/main` before finishing the work. Never force-push. If the remote has advanced, fetch and rebase/merge the user's commits before retrying.
-4. If push fails due to connectivity or credentials, report that source remains local and give the exact unsynced commit SHA.
+2. Check the current `main` ref before synchronizing. This workspace may not be a Git checkout, so use the connected GitHub repository tools to create a tree, a commit whose parent is the current `main`, then move the ref with an expected-SHA check. Never force-push or replace an advanced remote branch.
+3. If a normal Git checkout and working credentials are available, a normal fast-forward commit and push is also acceptable. Run appropriate checks. Do not claim a sync succeeded unless the new files are visible on GitHub.
+4. If the GitHub tools and Git credentials are unavailable, report that the source remains local and give any local commit SHA.
 
 The repository is public and released under MIT. Keep the license and attribution intact.
+
