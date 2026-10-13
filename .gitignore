@@ -1,0 +1,9 @@
+node_modules/
+dist/
+out/
+.test-data/
+.cache/
+test-results/
+output/
+*.log
+.env*

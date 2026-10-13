@@ -1,0 +1,139 @@
+{
+  "version": "round1-2026-10-05",
+  "description": "24 条自拟对照测试；其中部分参考已核对的公开术语或读者反馈。所有句子均非已出版小说引文。标注在首次模型调用前固定。",
+  "cases": [
+    {
+      "id": "D01", "split": "development", "group": "martial-uncle", "title": "师叔与亲叔", "category": "关系称谓", "provenance": "参考资料自拟", "references": ["address"],
+      "source": "周师叔把剑谱交给了我。", "translation": "Uncle Zhou handed me the sword manual.", "context": "周是我师父的师弟，与我没有血缘关系。这是他首次出场，前文尚未介绍这段师门关系。",
+      "expected": {"decision": "issue", "anchor": "师叔", "evidenceGroups": [["师门", "同门", "门派", "师父", "师傅", "师叔", "辈分"], ["未", "不明确", "亲", "血缘", "缺", "模糊", "不清"]], "rationale": "应指出译文没有明确师门关系，而不是断言 Uncle 必然代表亲叔叔。"},
+      "suggestedTranslation": "Martial Uncle Zhou handed me the sword manual."
+    },
+    {
+      "id": "D02", "split": "development", "group": "martial-uncle", "title": "师门辈分已保留", "category": "关系称谓", "provenance": "参考资料自拟", "references": ["address"],
+      "source": "周师叔把剑谱交给了我。", "translation": "Martial Uncle Zhou handed me the sword manual.", "context": "周是我师父的师弟，首次出场。全书约定以 Martial Uncle 表示这一辈分。",
+      "expected": {"decision": "clean", "rationale": "译文已保留师门关系，不应要求额外加入不存在的血缘说明。"}
+    },
+    {
+      "id": "D03", "split": "development", "group": "social-brother", "title": "称呼被改成血缘", "category": "关系称谓", "provenance": "参考资料自拟", "references": ["address"],
+      "source": "杜大哥招呼我坐下。", "translation": "My biological older brother Du asked me to sit down.", "context": "叙述者刚认识杜某，以大哥礼貌称呼他。两人没有亲属关系。",
+      "expected": {"decision": "issue", "anchor": "大哥", "evidenceGroups": [["血缘", "亲属", "亲生", "亲哥", "亲兄", "biological"], ["增", "无", "没有", "错误", "误", "不"]], "rationale": "biological 增添了原文和背景明确不存在的亲属关系。"},
+      "suggestedTranslation": "Brother Du asked me to sit down."
+    },
+    {
+      "id": "D04", "split": "development", "group": "social-brother", "title": "头领称呼可以用 Boss", "category": "关系称谓", "provenance": "参考资料自拟", "references": ["address"],
+      "source": "杜大哥招呼我坐下。", "translation": "Boss Du asked me to sit down.", "context": "杜某是帮会头领，大哥是成员对头领的称呼，成员之间无血缘关系。全书用 Boss 对应这个称呼。",
+      "expected": {"decision": "clean", "rationale": "头领称呼已按全书约定本地化，不应强制替换成 brother。"}
+    },
+    {
+      "id": "D05", "split": "development", "group": "cultivator-monk", "title": "修炼者被写成僧人", "category": "术语设定", "provenance": "参考资料自拟", "references": ["cultivation"],
+      "source": "那名修士御剑离开山谷。", "translation": "The monk flew out of the valley on his sword.", "context": "此人是无宗教身份的散修，不是僧人。此处首次介绍他。",
+      "expected": {"decision": "issue", "anchor": "修士", "evidenceGroups": [["monk", "僧", "宗教"], ["身份", "修炼", "修士", "散修"]], "rationale": "背景明确排除了僧人身份，不能把普通修炼者写成 monk。"},
+      "suggestedTranslation": "The cultivator flew out of the valley on his sword."
+    },
+    {
+      "id": "D06", "split": "development", "group": "cultivator-monk", "title": "佛寺人物可以用 monk", "category": "术语设定", "provenance": "参考资料自拟", "references": ["cultivation"],
+      "source": "那名修士御剑离开山谷。", "translation": "The monk flew out of the valley on his sword.", "context": "此人是佛寺出家的僧人，前文已交代宗教身份。全书对此人统一用 monk。此处修士是较宽泛的说法。",
+      "expected": {"decision": "clean", "rationale": "背景已确认宗教身份，不应看到 修士/monk 就自动报错。"}
+    },
+    {
+      "id": "D07", "split": "development", "group": "inner-demon", "title": "心魔被写成实体生物", "category": "术语设定", "provenance": "参考资料自拟", "references": ["cultivation"],
+      "source": "他深吸一口气，终于压下心魔。", "translation": "He took a deep breath and subdued the creature living inside his heart.", "context": "心魔指他因旧事产生的心理恐惧；本场景没有实体怪物、寄生或附身设定。",
+      "expected": {"decision": "issue", "anchor": "心魔", "evidenceGroups": [["实体", "生物", "怪物", "creature", "寄生"], ["心理", "恐惧", "心魔", "精神"]], "rationale": "译文把心理障碍变成了身体内的实体生物。"},
+      "suggestedTranslation": "He took a deep breath and finally overcame his inner demons."
+    },
+    {
+      "id": "D08", "split": "development", "group": "inner-demon", "title": "inner demons 可以保留比喻", "category": "术语设定", "provenance": "参考资料自拟", "references": ["cultivation"],
+      "source": "他深吸一口气，终于压下心魔。", "translation": "He took a deep breath and finally overcame his inner demons.", "context": "心魔指心理恐惧。inner demons 在此作为心理困扰的比喻，不指实体生物。",
+      "expected": {"decision": "clean", "rationale": "英文比喻已表达心理障碍，不应因为含 demons 就判为实体化。"}
+    },
+    {
+      "id": "D09", "split": "development", "group": "realm", "title": "境界被跳升", "category": "术语设定", "provenance": "参考资料自拟", "references": ["realm"],
+      "source": "他已经是一名筑基修士。", "translation": "He had already reached the Nascent Soul realm.", "context": "本书明确设定炼气、筑基、金丹、元婴依次升阶。筑基对应 Foundation Establishment，元婴对应 Nascent Soul。",
+      "expected": {"decision": "issue", "anchor": "筑基", "evidenceGroups": [["筑基", "Foundation"], ["元婴", "Nascent Soul", "境界", "等级"]], "rationale": "按输入的境界表，译文把人物境界升到了更高阶段。"},
+      "suggestedTranslation": "He had already reached Foundation Establishment."
+    },
+    {
+      "id": "D10", "split": "development", "group": "realm", "title": "境界译名的合理变体", "category": "术语设定", "provenance": "参考资料自拟", "references": ["realm"],
+      "source": "他已经是一名筑基修士。", "translation": "He had already reached Foundation Building.", "context": "全书约定以 Foundation Building 对应筑基，没有与其他境界混用。",
+      "expected": {"decision": "clean", "rationale": "Foundation Building 是已说明的约定译名，不应强制统一成另一种常见译名。"}
+    },
+    {
+      "id": "D11", "split": "development", "group": "identity", "title": "编号被解释为出生排行", "category": "人物身份", "provenance": "参考线索自拟", "references": ["reader-names"],
+      "source": "沈七回到了宗族。", "translation": "The Shen patriarch's seventh son returned to the clan.", "context": "沈七是此人的宗族代号，七是登记编号，与父亲的生育顺序无关。",
+      "expected": {"decision": "issue", "anchor": "沈七", "evidenceGroups": [["排行", "第七", "儿子", "子嗣", "seventh son", "生育"], ["代号", "编号", "增", "无关", "身份"]], "rationale": "不能从名字或宗族编号推断是族长的第七个儿子。"},
+      "suggestedTranslation": "Shen Qi returned to the clan."
+    },
+    {
+      "id": "D12", "split": "development", "group": "identity", "title": "别称已明确对应", "category": "人物身份", "provenance": "参考线索自拟", "references": ["reader-names"],
+      "source": "沈七，也就是沈氏阿七，回到了宗族。", "translation": "Shen Qi, also known as Shen Clan's Seven, returned to the clan.", "context": "两个称呼指同一人物，七是宗族编号。译文在首次出现时明确了对应关系。",
+      "expected": {"decision": "clean", "rationale": "两个称呼已明确对应，不应因为出现不同译名就自动报身份混淆。"}
+    },
+    {
+      "id": "D13", "split": "development", "group": "certainty", "title": "推测被写成确定事实", "category": "确定程度", "provenance": "自拟测试", "references": [],
+      "source": "他想来已经死在城外了。", "translation": "He had certainly died outside the city.", "context": "这是人物没有证据的猜测，尚未确认死亡。",
+      "expected": {"decision": "issue", "anchor": "想来", "evidenceGroups": [["推测", "猜测", "可能", "想来"], ["确定", "肯定", "certainly", "事实", "确信"]], "rationale": "原文保留推测，译文 certainly 把它强化为确定结论。"},
+      "suggestedTranslation": "He had probably died outside the city."
+    },
+    {
+      "id": "D14", "split": "development", "group": "cause", "title": "退场原因被改写", "category": "因果与否定", "provenance": "自拟测试", "references": [],
+      "source": "他因伤退场，并非因为畏惧。", "translation": "He withdrew because he was afraid.", "context": "受伤是退场原因，原文明确否定恐惧是原因。",
+      "expected": {"decision": "issue", "anchor": "因伤", "evidenceGroups": [["伤", "受伤"], ["畏惧", "害怕", "恐惧", "afraid", "原因", "因果"]], "rationale": "译文用被原文排除的动机替换了实际原因。"},
+      "suggestedTranslation": "He withdrew because of his injury, not out of fear."
+    },
+    {
+      "id": "D15", "split": "development", "group": "delayed-identity", "title": "揭晓被移到动作前", "category": "揭晓顺序", "provenance": "自拟测试", "references": [],
+      "source": "黑衣人放下长剑，露出面容。竟是韩策。", "translation": "Han Ce lowered his sword and revealed his face.", "context": "这段前没有说明黑衣人的身份，原文用竟是才点明名字。",
+      "expected": {"decision": "review", "anchor": "竟是", "needsContext": true, "evidenceGroups": [["身份", "名字", "韩策"], ["提前", "顺序", "先", "位置", "悬念"]], "rationale": "应指出信息出现位置不同，并保留是否有意制造悬念的复核条件。"},
+      "suggestedTranslation": "The figure in black lowered his sword and revealed his face. It was Han Ce."
+    },
+    {
+      "id": "D16", "split": "development", "group": "delayed-identity", "title": "读者已知身份时的改写", "category": "揭晓顺序", "provenance": "自拟测试", "references": [],
+      "source": "黑衣人放下长剑，露出面容。那是韩策。", "translation": "Han Ce lowered his sword and revealed his face.", "context": "上一段已经明确写出韩策披着黑衣走来，叙述者与读者都已知道身份。这里没有隐藏身份的悬念。",
+      "expected": {"decision": "clean", "rationale": "读者在此之前已知身份，不能仅凭名字位置就报提前揭晓。"}
+    },
+    {
+      "id": "H01", "split": "holdout", "group": "junior-sister", "title": "师妹被写成姐姐", "category": "关系称谓", "provenance": "参考资料自拟", "references": ["address"],
+      "source": "姜师妹守在门口。", "translation": "Older Sister Jiang stood guard at the door.", "context": "姜与叙述者同门同辈，但入门更晚，资历较浅；两人无亲属关系，首次出场。",
+      "expected": {"decision": "issue", "anchor": "师妹", "evidenceGroups": [["资历", "晚", "浅", "师妹", "先后"], ["Older", "姐姐", "年长", "更高", "较长", "反", "错误", "误"]], "rationale": "译文把较浅资历的同门称为 Older Sister，关系信息发生变化。"},
+      "suggestedTranslation": "Junior Sister Jiang stood guard at the door."
+    },
+    {
+      "id": "H02", "split": "holdout", "group": "expert-seniority", "title": "前辈不必年长", "category": "关系称谓", "provenance": "参考资料自拟", "references": ["address"],
+      "source": "林前辈答应指点我。", "translation": "Senior Lin agreed to give me guidance.", "context": "林虽然年纪较轻，但修为远高于叙述者。此处前辈表示经验与修为上的尊敬，全书统一用 Senior。",
+      "expected": {"decision": "clean", "rationale": "尊称基于修为与经验，不能因为对方年轻就误判 Senior。"}
+    },
+    {
+      "id": "H03", "split": "holdout", "group": "energy-location", "title": "丹田被写成农田", "category": "术语设定", "provenance": "参考资料自拟", "references": ["cultivation"],
+      "source": "灵力缓缓汇入丹田。", "translation": "Spiritual energy slowly flowed into a hundred-acre field.", "context": "丹田是人物下腹部汇聚能量的位置，场景没有农田。",
+      "expected": {"decision": "issue", "anchor": "丹田", "evidenceGroups": [["丹田", "下腹", "身体", "体内"], ["农田", "field", "田地", "百亩", "场地"]], "rationale": "身体内的能量位置被改成了外部空间，且增添面积。"},
+      "suggestedTranslation": "Spiritual energy slowly flowed into his dantian."
+    },
+    {
+      "id": "H04", "split": "holdout", "group": "jianghu", "title": "已说明的江湖译名", "category": "术语设定", "provenance": "参考资料自拟", "references": ["realm"],
+      "source": "他在江湖上已有名声。", "translation": "He had already made a name for himself in the jianghu.", "context": "全书保留 jianghu，并在首次出现时说明它指武林社会。本句没有新的地理设定。",
+      "expected": {"decision": "clean", "rationale": "既有术语约定足以支撑理解，不必逐次解释或要求改成 rivers and lakes。"}
+    },
+    {
+      "id": "H05", "split": "holdout", "group": "not-yet", "title": "尚未被写成已经", "category": "因果与否定", "provenance": "自拟测试", "references": [],
+      "source": "她尚未突破，所以没有参加比试。", "translation": "She had already broken through, so she did not enter the contest.", "context": "尚未突破是她不参赛的原因，尚未与已经不能互换。",
+      "expected": {"decision": "issue", "anchor": "尚未", "evidenceGroups": [["尚未", "没有", "未", "not yet"], ["已经", "already", "相反", "反转", "突破"]], "rationale": "译文反转了修炼进度，并破坏了不参赛的原因。"},
+      "suggestedTranslation": "She had not yet broken through, so she did not enter the contest."
+    },
+    {
+      "id": "H06", "split": "holdout", "group": "reveal-preserved", "title": "动作语序变化但揭晓未变", "category": "揭晓顺序", "provenance": "自拟测试", "references": [],
+      "source": "老妇抬起头，放下拐杖。她就是掌门。", "translation": "The old woman set down her cane and looked up. She was the sect leader.", "context": "动作顺序在此没有因果或线索意义；读者在动作之后才知道她是掌门，两种文本都如此。",
+      "expected": {"decision": "clean", "rationale": "身份揭晓位置相同，不应把普通动作语序变化误报成身份提前揭晓。"}
+    },
+    {
+      "id": "H07", "split": "holdout", "group": "death-omission", "title": "死亡被改成受伤", "category": "事实与遗漏", "provenance": "自拟测试", "references": [],
+      "source": "其余弟子全已身亡，只有季明活着归来。", "translation": "The other disciples were injured, and Ji Ming returned alive.", "context": "其余弟子确已死亡。季明是唯一活着归来的人，这会影响下一章对其他人物的判断。",
+      "expected": {"decision": "issue", "anchor": "身亡", "evidenceGroups": [["死亡", "身亡", "死"], ["受伤", "injured", "存活", "生死"]], "rationale": "译文把死亡写成受伤，并使唯一幸存者的信息不明确。"},
+      "suggestedTranslation": "All the other disciples had died; only Ji Ming returned alive."
+    },
+    {
+      "id": "H08", "split": "holdout", "group": "yellow-springs", "title": "保留含义的习语本地化", "category": "术语设定", "provenance": "参考资料自拟", "references": ["realm"],
+      "source": "他险些命丧黄泉。", "translation": "He nearly lost his life.", "context": "黄泉在此只表示死亡，句子没有引入真实冥界地点，也没有黄泉相关伏笔。",
+      "expected": {"decision": "clean", "rationale": "译文保留险些死亡的意思，无需强制补回 Yellow Springs。"}
+    }
+  ]
+}

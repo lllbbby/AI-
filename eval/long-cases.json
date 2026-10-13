@@ -1,0 +1,302 @@
+{
+  "version": "longtext-2026-10-05",
+  "description": "两组多段场景及一篇完整自拟短章，各有待核对译文与参考译文，共六条测试。全部为自拟，并非已出版小说引文。标注在首次长文本调用前固定。",
+  "cases": [
+    {
+      "split": "development",
+      "group": "P01",
+      "title": "旧驿门前：谁把钥匙交给谁",
+      "category": "关系与行动指代",
+      "provenance": "独立自拟长文本",
+      "references": [],
+      "source": "沈璃入门那年，许照已经跟随周先生学剑三载。两人并无血缘关系，只按师门规矩以师兄妹相称。临行前，周先生把铜钥匙交给沈璃，嘱咐她保管好，到了旧驿再开门。许照则背起装着药瓶的布囊，走在前面。\n\n山路湿滑，许照旧伤未愈，走到半途便停下来歇脚。沈璃没有催他，只从囊中取出一瓶药，放到石上。他拧开瓶塞，将药敷在脚踝上，示意她再等片刻。\n\n天黑时，两人才来到旧驿。沈璃摸出铜钥匙，试着转动门锁，却听见里面传来脚步声。她把钥匙交给师兄，自己退到窗边，借着最后一点天光观察屋内的动静。\n\n许照没有急着推门。他收好钥匙，抬手示意沈璃噤声。屋中人只是经过门边，并没有停下来。等脚步远了，他才轻轻开锁，让她先进去。",
+      "context": "",
+      "id": "P01",
+      "translation": "When Shen Li joined the sect, Xu Zhao had already studied swordsmanship under Master Zhou for three years. They were not related by blood; they called each other senior and junior martial siblings according to the sect’s custom. Before they left, Master Zhou gave Shen Li the brass key and told her to keep it safe until they reached the old relay station. Xu Zhao shouldered the bag of medicine and led the way. The mountain path was slippery. His old injury had not healed, and halfway there he stopped to rest. Shen Li took a bottle from the bag and set it on a rock without urging him on. He removed the stopper, applied the medicine to his ankle, and asked her to wait a little longer.\n\nThey reached the old station at dusk. Shen Li took out the brass key and tried the lock, but footsteps sounded inside. He handed the key to his junior sister and moved to the window to watch the room in the last of the daylight.\n\nXu Zhao, Shen Li’s biological older brother, did not push the door open at once. He put away the key and raised a hand for silence. The person inside passed the door without stopping. Only after the footsteps faded did he unlock it gently and let her go in first.",
+      "expected": {
+        "decision": "issue",
+        "findings": [
+          {
+            "title": "递钥匙的行动人被调换",
+            "evidenceGroups": [
+              [
+                "钥匙",
+                "key"
+              ],
+              [
+                "交",
+                "递",
+                "动作",
+                "主语",
+                "行动"
+              ],
+              [
+                "沈璃",
+                "许照",
+                "她",
+                "他"
+              ]
+            ],
+            "rationale": "前文由沈璃保管钥匙，第三段也是她交给许照；译文却换成男性递给女性。"
+          },
+          {
+            "title": "已说明非血缘，却新增亲兄妹",
+            "evidenceGroups": [
+              [
+                "血缘",
+                "亲生",
+                "亲属",
+                "biological"
+              ],
+              [
+                "无",
+                "没有",
+                "不",
+                "矛盾",
+                "增",
+                "误"
+              ]
+            ],
+            "rationale": "第一段明确两人无血缘关系，后文不能增添 biological older brother。"
+          }
+        ],
+        "rationale": "应结合完整输入识别全部标注差异，不能只检查一条短句。"
+      }
+    },
+    {
+      "split": "development",
+      "group": "P01",
+      "title": "旧驿门前：谁把钥匙交给谁（参考译文）",
+      "category": "关系与行动指代",
+      "provenance": "独立自拟长文本",
+      "references": [],
+      "source": "沈璃入门那年，许照已经跟随周先生学剑三载。两人并无血缘关系，只按师门规矩以师兄妹相称。临行前，周先生把铜钥匙交给沈璃，嘱咐她保管好，到了旧驿再开门。许照则背起装着药瓶的布囊，走在前面。\n\n山路湿滑，许照旧伤未愈，走到半途便停下来歇脚。沈璃没有催他，只从囊中取出一瓶药，放到石上。他拧开瓶塞，将药敷在脚踝上，示意她再等片刻。\n\n天黑时，两人才来到旧驿。沈璃摸出铜钥匙，试着转动门锁，却听见里面传来脚步声。她把钥匙交给师兄，自己退到窗边，借着最后一点天光观察屋内的动静。\n\n许照没有急着推门。他收好钥匙，抬手示意沈璃噤声。屋中人只是经过门边，并没有停下来。等脚步远了，他才轻轻开锁，让她先进去。",
+      "context": "",
+      "id": "P03",
+      "translation": "When Shen Li joined the sect, Xu Zhao had already studied swordsmanship under Master Zhou for three years. They were not related by blood; they called each other senior and junior martial siblings according to the sect’s custom. Before they left, Master Zhou gave Shen Li the brass key and told her to keep it safe until they reached the old relay station. Xu Zhao shouldered the bag of medicine and led the way. The mountain path was slippery. His old injury had not healed, and halfway there he stopped to rest. Shen Li took a bottle from the bag and set it on a rock without urging him on. He removed the stopper, applied the medicine to his ankle, and asked her to wait a little longer.\n\nThey reached the old station at dusk. Shen Li took out the brass key and tried the lock, but footsteps sounded inside. She handed the key to her senior brother and moved to the window to watch the room in the last of the daylight.\n\nXu Zhao did not push the door open at once. He put away the key and raised a hand for silence. The person inside passed the door without stopping. Only after the footsteps faded did he unlock it gently and let her go in first.",
+      "expected": {
+        "decision": "clean",
+        "rationale": "关系、术语、动作、事实强度与揭晓顺序均保留；已说明的称谓无需反复补译。"
+      }
+    },
+    {
+      "split": "development",
+      "group": "P02",
+      "title": "渡口等信：名字与消息何时确定",
+      "category": "揭晓顺序与确定程度",
+      "provenance": "独立自拟长文本",
+      "references": [],
+      "source": "雨停后，陈望在渡口等了半个时辰。送信人始终没有来，只有岸边那盏灯还亮着。他想起出门前听到的争执，猜测那封信也许根本没有送出。可是他没有见过信，不能凭几句传言下定论。\n\n一名戴斗笠的人从柳树后走出来，把一只木盒放在石阶上。那人没有开口，左手始终藏在袖里。陈望看不清他的脸，只能从步子判断，他似乎受了伤。\n\n陈望没有立刻去拿木盒。他先问来人是否见过送信人。对方摇了摇头，抬手压低斗笠，仍不肯答话。陈望心里一沉：送信人或许已经遇险，但也可能只是换了路。他决定先找到证据，再把消息带回去。\n\n来人终于摘下斗笠。灯光照见一张熟悉的脸，竟是半月前离开宗门的陆衡。陈望这才走下石阶，扶住他的胳膊。木盒里没有信，只有一枚折断的令牌。",
+      "context": "",
+      "id": "P02",
+      "translation": "After the rain stopped, Chen Wang waited at the ferry for half an hour. The courier never came, and only the lamp by the bank remained alight. Remembering the argument he had heard before leaving, he wondered whether the letter had ever been sent. But he had not seen it and could not draw a conclusion from a few rumors.\n\nLu Heng, wearing a bamboo hat, stepped out from behind the willow and set a wooden box on the stone steps. The figure said nothing and kept the left hand inside a sleeve. Chen Wang could not see the face; the unsteady steps suggested an injury.\n\nChen Wang did not take the box at once. He asked whether the stranger had seen the courier. The stranger shook his head and pulled the hat lower without replying. The courier had certainly been killed, Chen Wang thought. He would find evidence before carrying any news back.\n\nAt last the stranger removed the hat. The lamplight fell on a familiar face: it was Lu Heng, who had left the sect half a month earlier. Only then did Chen Wang descend the steps to support his arm. There was no letter in the box, only a broken identification token.",
+      "expected": {
+        "decision": "issue",
+        "findings": [
+          {
+            "title": "身份出现较早",
+            "evidenceGroups": [
+              [
+                "陆衡",
+                "Lu Heng",
+                "名字",
+                "身份"
+              ],
+              [
+                "提前",
+                "较早",
+                "先",
+                "悬念",
+                "揭晓"
+              ]
+            ],
+            "rationale": "原文第四段才给名字，译文第二段已出现；修改仍需核对悬念意图。",
+            "needsContext": true
+          },
+          {
+            "title": "未证实的担忧变成确定死亡",
+            "evidenceGroups": [
+              [
+                "送信",
+                "courier",
+                "死亡",
+                "死",
+                "遇险"
+              ],
+              [
+                "推测",
+                "猜测",
+                "确定",
+                "断言",
+                "可能"
+              ]
+            ],
+            "rationale": "原文同时保留遇险和换路的可能，译文断言送信人死亡。"
+          }
+        ],
+        "rationale": "应结合完整输入识别全部标注差异，不能只检查一条短句。"
+      }
+    },
+    {
+      "split": "development",
+      "group": "P02",
+      "title": "渡口等信：名字与消息何时确定（参考译文）",
+      "category": "揭晓顺序与确定程度",
+      "provenance": "独立自拟长文本",
+      "references": [],
+      "source": "雨停后，陈望在渡口等了半个时辰。送信人始终没有来，只有岸边那盏灯还亮着。他想起出门前听到的争执，猜测那封信也许根本没有送出。可是他没有见过信，不能凭几句传言下定论。\n\n一名戴斗笠的人从柳树后走出来，把一只木盒放在石阶上。那人没有开口，左手始终藏在袖里。陈望看不清他的脸，只能从步子判断，他似乎受了伤。\n\n陈望没有立刻去拿木盒。他先问来人是否见过送信人。对方摇了摇头，抬手压低斗笠，仍不肯答话。陈望心里一沉：送信人或许已经遇险，但也可能只是换了路。他决定先找到证据，再把消息带回去。\n\n来人终于摘下斗笠。灯光照见一张熟悉的脸，竟是半月前离开宗门的陆衡。陈望这才走下石阶，扶住他的胳膊。木盒里没有信，只有一枚折断的令牌。",
+      "context": "",
+      "id": "P04",
+      "translation": "After the rain stopped, Chen Wang waited at the ferry for half an hour. The courier never came, and only the lamp by the bank remained alight. Remembering the argument he had heard before leaving, he wondered whether the letter had ever been sent. But he had not seen it and could not draw a conclusion from a few rumors.\n\nA figure in a bamboo hat stepped out from behind the willow and set a wooden box on the stone steps. The figure said nothing and kept the left hand inside a sleeve. Chen Wang could not see the face; the unsteady steps suggested an injury.\n\nChen Wang did not take the box at once. He asked whether the stranger had seen the courier. The stranger shook his head and pulled the hat lower without replying. The courier might have run into trouble, Chen Wang thought, but might simply have taken another route. He would find evidence before carrying any news back.\n\nAt last the stranger removed the hat. The lamplight fell on a familiar face: it was Lu Heng, who had left the sect half a month earlier. Only then did Chen Wang descend the steps to support his arm. There was no letter in the box, only a broken identification token.",
+      "expected": {
+        "decision": "clean",
+        "rationale": "关系、术语、动作、事实强度与揭晓顺序均保留；已说明的称谓无需反复补译。"
+      }
+    },
+    {
+      "split": "development",
+      "group": "C01",
+      "title": "第一章 · 夜入旧驿",
+      "category": "章节综合检查",
+      "provenance": "独立自拟长文本",
+      "references": [],
+      "source": "暮色压到山口时，沈璃和许照才看见旧驿的屋顶。驿道废弃已有十年，门前却留着几道新鲜车辙。许照停下来，把灯往低处移了移。雨水正在车辙里聚成细线，最靠近门的一道还没有被落叶盖住。有人比他们早到，离开的时间也不会太久。\n\n沈璃从袖中摸出周先生交给她的铜钥匙，拢在掌心。她入门比许照晚三年，平日喊他师兄，两人并不是兄妹。许照的左脚在上个月受过伤，走了这一程，又开始发肿。他愿意陪她进屋查看，却没法沿着驿道追远。沈璃答应，若有动静，就由她出去，他留在门边接应。\n\n出发时，周先生只交代了两件事：找出驿站留下的账册，天亮前回山。宗门要查的是一批去向不明的药材，不是来这里寻仇。两人都还在筑基境，遇到陌生修士应先问来意，不可贸然动手。许照把这些话又重复了一遍，确认沈璃没有把旧驿想成藏着仇家的地方。\n\n布囊里还有两张静心符。这种符只用于稳住心神，不能让人隐身，也不能隔绝声音。沈璃小时候曾被困在黑暗中，遇上浓雾容易想起旧事；周先生因此让她带着备用。她没有把往事讲完，许照也没有追问。他只是把符纸放在容易取到的地方，再把囊口系紧。\n\n两人绕过倒在路边的石碑，走到门前。门上的铜环被人擦过，锁孔里还留着一缕细线。沈璃蹲下来，用树枝把细线挑开，确认另一头没有连着铃铛。许照把灯举到门侧，没有踩上正对门口的木板。板缝里压着一片嫩叶，与四周积了多年的枯叶颜色不同。\n\n沈璃试了两次，门锁都没有转动。她把铜钥匙交给许照，自己退到窗边查看。许照借着灯光扶正钥匙，听见锁芯响了一声，却没有立即开门。屋里有人拖动椅子，随后又静了下来。他等那阵声响过去，才把门推开一道缝，让沈璃先看清里面。\n\n屋内没有人，桌上却放着半碗尚温的水。沈璃没有碰水碗，只绕着桌子走了一圈。墙边的柜门开着，账册整齐地码在最下面一层，像是专门留给后来的人。许照守着门，提醒她先看看柜子背面。她在那里找到一张新贴的纸，纸上的墨迹还没有完全干。\n\n纸上只有一句话：别把账册带回山。末尾没有署名，也没有宗门印记。沈璃认得其中一个字的写法，和负责药库的杜师叔有些相似，但她平日只见过他写药名，不能凭这一点确认。她把纸折好，夹进自己的记事本，打算回去请周先生辨认。\n\n屋外突然起了雾。许照看见沈璃停在柜前，呼吸渐渐急促，便取出一张静心符，递到她手里。她握住符纸，等心绪平稳后才继续翻账。符角一点点暗下去，最后变成灰白色。许照将用过的符纸收好，没有把它放回备用符旁边。\n\n账册里夹着一幅驿站的旧图。图上标出后院和一间没有窗子的库房，通向库房的路却被新墨划掉了。沈璃拿灯照了照，发现纸背也有痕迹。有人先写了一个名字，又用墨涂去；现在只能看出最后一笔，无法辨出是谁。她没有把看不清的字补进记事本。\n\n后院传来脚步声。沈璃放下账册，示意许照守住门口，自己跟过去看看。许照摆了摆手，仍留在原处。他将灯放到门槛边，移开压在板缝里的嫩叶，露出下面的一根短钉。若有人从院里奔回来，他会先把这块木板翻起，免得对方踩中。\n\n院中只有一口干井和几只空药箱。沈璃顺着脚步追到井边，发现其中一只箱子的底板比别的厚。她没有急着拆开，只敲了两下，听见里面传来轻响。雾已经遮住了来路，门边的灯成了一个模糊的光点。她朝许照喊了一声，听见应答才继续查看。\n\n一张静心符还没用过，留在她腰侧的小袋里。她取出来握在掌中，稳住呼吸后才把药箱拖到井边。风吹散了少许雾气，箱底露出一道细缝。缝里夹着一截封蜡，颜色和宗门药库平日所用的一样。她将封蜡包好，准备与账册一起交回去。\n\n一道黑影从库房旁走来。来人蒙着脸，右肩的衣服被雨水浸透，左手提着一只窄木匣。沈璃看不清他的面容，便退到井的另一侧，问他为什么会在这里。那人先看了一眼她手里的封蜡，没有回答身份，只说木匣必须交给周先生，不能落到药库的人手里。\n\n沈璃没有接匣子。对方能叫出周先生的名字，并不等于可以信任。她让他把匣子放在井沿上，退开三步。那人依言照做，又提醒她不要打开：里面的纸沾了毒，空手碰过便会留下青痕。沈璃从衣角撕下一条布，把木匣绑好，始终没有用手直接碰盖子。\n\n她想起那张未署名的纸，又想到药箱上的封蜡，心中生出一个猜测：杜师叔或许与药材失踪有关。然而相似的笔迹和同色的蜡都算不上定论，药库还有别的人可以取用。她只把两条线索记下，没有在杜师叔的名字后写“内贼”二字。\n\n来人摘下面巾，露出一张带伤的脸。竟是林靖。沈璃见过他两次，知道他是周先生的同门师弟，平日称他林师叔。她放下按在剑柄上的手，却没有立即上前。林靖右肩的伤口还在渗血，他用那条受伤的手臂护着木匣，像是怕它从井沿滑落。\n\n林靖说，他一路跟踪送药的车来到旧驿，中途遇袭才蒙面躲进库房。他还没有查明是谁下的手，只确定药材并非送往山下医馆。许照从门边走来，把剩下的药递给他。三个人对照账册与旧图，发现被划掉的那条路正好通向山后的废窑。\n\n沈璃把账册、封蜡和木匣分别包好，确认林靖能够自己行走，才去门口接许照。那把铜钥匙仍在许照手里，他重新锁好驿门，再把钥匙交还给她。两张静心符都已用过，回程的路上她只能靠门边带出的那盏灯辨认石阶。许照走得慢，她就走在旁边。\n\n天将亮时，三人回到山门。守门弟子要她先报药库，她却坚持直接见周先生。在线索查清之前，账册不能多经一双手。周先生打开门，看见林靖肩上的伤，没有先问账册，只让他们进屋。沈璃这才松开一直握着的小袋，把铜钥匙放到了桌上。",
+      "context": "",
+      "id": "C01",
+      "translation": "By the time dusk settled over the mountain pass, Shen Li and Xu Zhao could finally see the roof of the old relay station. The road had been abandoned for ten years, yet fresh wheel tracks marked the ground outside its gate. Xu Zhao stopped and lowered the lamp. Rainwater was gathering in the ruts, and fallen leaves had not yet covered the one nearest the door. Someone had arrived before them and could not have left very long ago.\n\nShen Li drew the brass key Master Zhou had entrusted to her from her sleeve and held it in her palm. She had joined the sect three years after Xu Zhao and usually called him her senior brother; they were not siblings by blood. His left ankle, injured the previous month, had begun to swell after the journey. He was willing to help her search the building, but could not follow anyone far down the road. If they heard movement, they agreed, she would investigate while he stayed by the entrance to help her on her return.\n\nMaster Zhou had given them only two instructions: find the station’s account books and return before dawn. The sect was investigating a missing shipment of medicinal herbs, not seeking revenge. Both disciples were still in the Foundation Establishment realm. They were to ask unfamiliar cultivators their purpose before resorting to violence. Xu Zhao repeated the instructions to make sure Shen Li was not expecting to find an enemy hiding in the station.\n\nTheir bag also held two Calming Talismans. These steadied the mind; they could neither hide a person nor block sound. As a child, Shen Li had been trapped in darkness, and thick fog often brought back the memory. That was why Master Zhou had sent the talismans with her. She did not finish telling Xu Zhao about the incident, and he did not press her. He simply put the talismans where they could be reached easily and tied the bag shut.\n\nThey passed a fallen stone marker and approached the entrance. Someone had wiped the brass door ring clean, and a thread remained in the keyhole. Shen Li crouched and lifted it out with a twig, making sure it was not attached to a bell. Xu Zhao held the lamp beside the door and avoided the wooden board directly in front of it. A fresh leaf lay wedged in a crack, its color unlike the dead leaves that had accumulated around it over the years.\n\nShen Li tried the lock twice without success. He handed the brass key to Shen Li and stepped back to inspect the window. He straightened the key by lamplight and heard the mechanism click, but did not immediately open the door. A chair scraped across the floor inside, then everything fell silent. Only after the noise had stopped did he ease the door open a little and let Shen Li look in first.\n\nNo one was in the room, but half a bowl of warm water stood on the table. Shen Li left it untouched and walked around the table. A cabinet against the wall stood open, with account books neatly stacked on the lowest shelf as though they had been left for someone to find. Xu Zhao remained at the door and suggested checking behind the cabinet first. There she found a newly pasted sheet of paper on which the ink was not quite dry.\n\nThe paper bore a single line: Do not take the account books back to the mountain. There was no signature or sect seal. Shen Li recognized the shape of one character; it resembled Martial Uncle Du’s writing. He managed the herb store, but she had only seen him write the names of medicines and could not identify the hand from so little evidence. She folded the paper into her notebook to ask Master Zhou about it later.\n\nFog suddenly rose outside. Seeing Shen Li pause before the cabinet as her breathing quickened, Xu Zhao took out a Calming Talisman and gave it to her. She held it until her thoughts settled, then returned to the accounts. The corners of the paper gradually darkened before turning an ashen white. Xu Zhao put the spent paper aside rather than returning it to the bag beside the unused talisman.\n\nAn old plan of the station lay between the pages. It marked the rear courtyard and a windowless storeroom, but fresh ink had crossed out the path leading to the storeroom. Shen Li held the plan to the lamp and noticed marks on the reverse as well. Someone had written a name and blotted it out. Only the final stroke remained visible, too little to identify the person. She did not fill the illegible name into her notebook.\n\nFootsteps sounded in the rear courtyard. Shen Li set down the accounts, asked Xu Zhao to watch the entrance, and went to investigate. Xu Zhao waved a hand and stayed where he was, too frightened to follow her. He set the lamp beside the threshold and lifted the fresh leaf from the crack in the board, revealing a short spike beneath it. If someone came running back from the courtyard, he would turn the board over before they stepped on it.\n\nThe courtyard contained only a dry well and a few empty medicine crates. Shen Li followed the footsteps to the well and noticed that one crate had a thicker bottom than the others. Instead of opening it immediately, she tapped twice and heard something rattle inside. Fog had hidden the way back, leaving the lamp at the entrance a blurred point of light. She called to Xu Zhao and waited for his answer before looking further.\n\nOne Silencing Talisman remained unused in the pouch at her waist. She took it out, held it to steady her breathing, then dragged the crate to the well. A gust dispersed some of the fog and revealed a narrow gap in the bottom. A piece of sealing wax was caught in it, the same color as the wax routinely used in the sect’s herb store. She wrapped it carefully to take back with the account books.\n\nLin Jing approached from beside the storeroom. His face was covered, the clothing over his right shoulder soaked with rain, and he carried a narrow wooden case in his left hand. Shen Li could not see his face. She stepped to the far side of the well and asked why he was there. He glanced at the sealing wax in her hand without giving his name and said only that the case must reach Master Zhou, not anyone at the herb store.\n\nShen Li did not take the case. Knowing Master Zhou’s name was no guarantee that the stranger could be trusted. She asked him to place it on the edge of the well and take three steps back. He complied, warning her not to open it: the papers inside were poisoned, and touching them with bare hands would leave blue marks. Shen Li tore a strip from the hem of her clothing and secured the case with it, never touching the lid directly.\n\nShe recalled the unsigned note and the wax on the crate. Martial Uncle Du was certainly behind the missing shipment, she thought. But similar handwriting and matching wax were not conclusive; others had access to the herb store as well. She recorded the two clues without writing the word traitor beside his name.\n\nThe stranger removed his face covering, revealing a wounded face. It was Lin Jing. Shen Li had met him twice and knew he was Master Zhou’s junior martial brother; she usually addressed him as Martial Uncle Lin. She let her hand fall from her sword hilt but did not immediately approach. His right shoulder was still bleeding, and he used the injured arm to guard the case as though afraid it might slip from the edge of the well.\n\nLin Jing said he had followed a medicine cart to the station. An attack along the way had driven him to cover his face and hide in the storeroom. He had not discovered who attacked him; he knew only that the herbs were not going to the clinic below the mountain. Xu Zhao came from the doorway and offered him the remaining medicine. Comparing the accounts with the old plan, the three found that the crossed-out path led to an abandoned kiln behind the mountain.\n\nShen Li wrapped the accounts, the wax, and the case separately. Once she was sure Lin Jing could walk unaided, she returned to the entrance for Xu Zhao. He still had the brass key. He locked the station again and handed it back to her. Both Calming Talismans had been used, so on the return journey she had only the lamp from the doorway to help her find the stone steps. Xu Zhao walked slowly, and she stayed beside him.\n\nThe three reached the mountain gate as dawn approached. A disciple on duty told Shen Li to report to the herb store first, but she insisted on seeing Master Zhou directly. Until the clues had been checked, the account books must not pass through another pair of hands. Master Zhou opened his door and, seeing the wound in Lin Jing’s shoulder, invited them in before asking about the accounts. Only then did Shen Li release the pouch she had been gripping and set the brass key on the table.",
+      "expected": {
+        "decision": "issue",
+        "findings": [
+          {
+            "title": "递钥匙的行动人被调换",
+            "evidenceGroups": [
+              [
+                "钥匙",
+                "key"
+              ],
+              [
+                "交",
+                "递",
+                "动作",
+                "主语",
+                "行动"
+              ],
+              [
+                "沈璃",
+                "许照",
+                "她",
+                "他"
+              ]
+            ],
+            "rationale": "第二段说明沈璃保管钥匙，第六段由她交给许照，译文却反转双方。"
+          },
+          {
+            "title": "留守原因被补成害怕",
+            "evidenceGroups": [
+              [
+                "许照",
+                "Xu Zhao",
+                "留",
+                "门口"
+              ],
+              [
+                "害怕",
+                "恐惧",
+                "胆怯",
+                "frightened"
+              ],
+              [
+                "伤",
+                "脚",
+                "踝",
+                "约定",
+                "接应"
+              ]
+            ],
+            "rationale": "第二段明确伤势与接应约定，后文留守不能改写为胆怯。"
+          },
+          {
+            "title": "同一符箓变成不同功能",
+            "evidenceGroups": [
+              [
+                "静心",
+                "Calming",
+                "Silencing",
+                "符"
+              ],
+              [
+                "消音",
+                "隔绝",
+                "声音",
+                "沉默",
+                "安神",
+                "稳",
+                "心神",
+                "不一致",
+                "不统一"
+              ]
+            ],
+            "rationale": "第四段定义静心符且明确不能隔音，第十三段译成 Silencing Talisman 会改变功能。"
+          },
+          {
+            "title": "嫌疑被写成确定结论",
+            "evidenceGroups": [
+              [
+                "杜",
+                "Du",
+                "药材",
+                "shipment"
+              ],
+              [
+                "猜测",
+                "推测",
+                "可能",
+                "确定",
+                "肯定",
+                "certainly"
+              ]
+            ],
+            "rationale": "第八段与第十六段都限制证据强度，不能将疑似涉案译成确定主谋。"
+          },
+          {
+            "title": "蒙面人身份提前出现",
+            "evidenceGroups": [
+              [
+                "林靖",
+                "Lin Jing",
+                "名字",
+                "身份"
+              ],
+              [
+                "提前",
+                "较早",
+                "先",
+                "悬念",
+                "揭晓"
+              ]
+            ],
+            "rationale": "原文第十七段才点明林靖，译文第十四段已给名字；应保留悬念意图复核条件。",
+            "needsContext": true
+          }
+        ],
+        "rationale": "应结合完整输入识别全部标注差异，不能只检查一条短句。"
+      }
+    },
+    {
+      "split": "development",
+      "group": "C01",
+      "title": "第一章 · 夜入旧驿（参考译文）",
+      "category": "章节综合检查",
+      "provenance": "独立自拟长文本",
+      "references": [],
+      "source": "暮色压到山口时，沈璃和许照才看见旧驿的屋顶。驿道废弃已有十年，门前却留着几道新鲜车辙。许照停下来，把灯往低处移了移。雨水正在车辙里聚成细线，最靠近门的一道还没有被落叶盖住。有人比他们早到，离开的时间也不会太久。\n\n沈璃从袖中摸出周先生交给她的铜钥匙，拢在掌心。她入门比许照晚三年，平日喊他师兄，两人并不是兄妹。许照的左脚在上个月受过伤，走了这一程，又开始发肿。他愿意陪她进屋查看，却没法沿着驿道追远。沈璃答应，若有动静，就由她出去，他留在门边接应。\n\n出发时，周先生只交代了两件事：找出驿站留下的账册，天亮前回山。宗门要查的是一批去向不明的药材，不是来这里寻仇。两人都还在筑基境，遇到陌生修士应先问来意，不可贸然动手。许照把这些话又重复了一遍，确认沈璃没有把旧驿想成藏着仇家的地方。\n\n布囊里还有两张静心符。这种符只用于稳住心神，不能让人隐身，也不能隔绝声音。沈璃小时候曾被困在黑暗中，遇上浓雾容易想起旧事；周先生因此让她带着备用。她没有把往事讲完，许照也没有追问。他只是把符纸放在容易取到的地方，再把囊口系紧。\n\n两人绕过倒在路边的石碑，走到门前。门上的铜环被人擦过，锁孔里还留着一缕细线。沈璃蹲下来，用树枝把细线挑开，确认另一头没有连着铃铛。许照把灯举到门侧，没有踩上正对门口的木板。板缝里压着一片嫩叶，与四周积了多年的枯叶颜色不同。\n\n沈璃试了两次，门锁都没有转动。她把铜钥匙交给许照，自己退到窗边查看。许照借着灯光扶正钥匙，听见锁芯响了一声，却没有立即开门。屋里有人拖动椅子，随后又静了下来。他等那阵声响过去，才把门推开一道缝，让沈璃先看清里面。\n\n屋内没有人，桌上却放着半碗尚温的水。沈璃没有碰水碗，只绕着桌子走了一圈。墙边的柜门开着，账册整齐地码在最下面一层，像是专门留给后来的人。许照守着门，提醒她先看看柜子背面。她在那里找到一张新贴的纸，纸上的墨迹还没有完全干。\n\n纸上只有一句话：别把账册带回山。末尾没有署名，也没有宗门印记。沈璃认得其中一个字的写法，和负责药库的杜师叔有些相似，但她平日只见过他写药名，不能凭这一点确认。她把纸折好，夹进自己的记事本，打算回去请周先生辨认。\n\n屋外突然起了雾。许照看见沈璃停在柜前，呼吸渐渐急促，便取出一张静心符，递到她手里。她握住符纸，等心绪平稳后才继续翻账。符角一点点暗下去，最后变成灰白色。许照将用过的符纸收好，没有把它放回备用符旁边。\n\n账册里夹着一幅驿站的旧图。图上标出后院和一间没有窗子的库房，通向库房的路却被新墨划掉了。沈璃拿灯照了照，发现纸背也有痕迹。有人先写了一个名字，又用墨涂去；现在只能看出最后一笔，无法辨出是谁。她没有把看不清的字补进记事本。\n\n后院传来脚步声。沈璃放下账册，示意许照守住门口，自己跟过去看看。许照摆了摆手，仍留在原处。他将灯放到门槛边，移开压在板缝里的嫩叶，露出下面的一根短钉。若有人从院里奔回来，他会先把这块木板翻起，免得对方踩中。\n\n院中只有一口干井和几只空药箱。沈璃顺着脚步追到井边，发现其中一只箱子的底板比别的厚。她没有急着拆开，只敲了两下，听见里面传来轻响。雾已经遮住了来路，门边的灯成了一个模糊的光点。她朝许照喊了一声，听见应答才继续查看。\n\n一张静心符还没用过，留在她腰侧的小袋里。她取出来握在掌中，稳住呼吸后才把药箱拖到井边。风吹散了少许雾气，箱底露出一道细缝。缝里夹着一截封蜡，颜色和宗门药库平日所用的一样。她将封蜡包好，准备与账册一起交回去。\n\n一道黑影从库房旁走来。来人蒙着脸，右肩的衣服被雨水浸透，左手提着一只窄木匣。沈璃看不清他的面容，便退到井的另一侧，问他为什么会在这里。那人先看了一眼她手里的封蜡，没有回答身份，只说木匣必须交给周先生，不能落到药库的人手里。\n\n沈璃没有接匣子。对方能叫出周先生的名字，并不等于可以信任。她让他把匣子放在井沿上，退开三步。那人依言照做，又提醒她不要打开：里面的纸沾了毒，空手碰过便会留下青痕。沈璃从衣角撕下一条布，把木匣绑好，始终没有用手直接碰盖子。\n\n她想起那张未署名的纸，又想到药箱上的封蜡，心中生出一个猜测：杜师叔或许与药材失踪有关。然而相似的笔迹和同色的蜡都算不上定论，药库还有别的人可以取用。她只把两条线索记下，没有在杜师叔的名字后写“内贼”二字。\n\n来人摘下面巾，露出一张带伤的脸。竟是林靖。沈璃见过他两次，知道他是周先生的同门师弟，平日称他林师叔。她放下按在剑柄上的手，却没有立即上前。林靖右肩的伤口还在渗血，他用那条受伤的手臂护着木匣，像是怕它从井沿滑落。\n\n林靖说，他一路跟踪送药的车来到旧驿，中途遇袭才蒙面躲进库房。他还没有查明是谁下的手，只确定药材并非送往山下医馆。许照从门边走来，把剩下的药递给他。三个人对照账册与旧图，发现被划掉的那条路正好通向山后的废窑。\n\n沈璃把账册、封蜡和木匣分别包好，确认林靖能够自己行走，才去门口接许照。那把铜钥匙仍在许照手里，他重新锁好驿门，再把钥匙交还给她。两张静心符都已用过，回程的路上她只能靠门边带出的那盏灯辨认石阶。许照走得慢，她就走在旁边。\n\n天将亮时，三人回到山门。守门弟子要她先报药库，她却坚持直接见周先生。在线索查清之前，账册不能多经一双手。周先生打开门，看见林靖肩上的伤，没有先问账册，只让他们进屋。沈璃这才松开一直握着的小袋，把铜钥匙放到了桌上。",
+      "context": "",
+      "id": "C02",
+      "translation": "By the time dusk settled over the mountain pass, Shen Li and Xu Zhao could finally see the roof of the old relay station. The road had been abandoned for ten years, yet fresh wheel tracks marked the ground outside its gate. Xu Zhao stopped and lowered the lamp. Rainwater was gathering in the ruts, and fallen leaves had not yet covered the one nearest the door. Someone had arrived before them and could not have left very long ago.\n\nShen Li drew the brass key Master Zhou had entrusted to her from her sleeve and held it in her palm. She had joined the sect three years after Xu Zhao and usually called him her senior brother; they were not siblings by blood. His left ankle, injured the previous month, had begun to swell after the journey. He was willing to help her search the building, but could not follow anyone far down the road. If they heard movement, they agreed, she would investigate while he stayed by the entrance to help her on her return.\n\nMaster Zhou had given them only two instructions: find the station’s account books and return before dawn. The sect was investigating a missing shipment of medicinal herbs, not seeking revenge. Both disciples were still in the Foundation Establishment realm. They were to ask unfamiliar cultivators their purpose before resorting to violence. Xu Zhao repeated the instructions to make sure Shen Li was not expecting to find an enemy hiding in the station.\n\nTheir bag also held two Calming Talismans. These steadied the mind; they could neither hide a person nor block sound. As a child, Shen Li had been trapped in darkness, and thick fog often brought back the memory. That was why Master Zhou had sent the talismans with her. She did not finish telling Xu Zhao about the incident, and he did not press her. He simply put the talismans where they could be reached easily and tied the bag shut.\n\nThey passed a fallen stone marker and approached the entrance. Someone had wiped the brass door ring clean, and a thread remained in the keyhole. Shen Li crouched and lifted it out with a twig, making sure it was not attached to a bell. Xu Zhao held the lamp beside the door and avoided the wooden board directly in front of it. A fresh leaf lay wedged in a crack, its color unlike the dead leaves that had accumulated around it over the years.\n\nShen Li tried the lock twice without success. She handed the brass key to Xu Zhao and stepped back to inspect the window. He straightened the key by lamplight and heard the mechanism click, but did not immediately open the door. A chair scraped across the floor inside, then everything fell silent. Only after the noise had stopped did he ease the door open a little and let Shen Li look in first.\n\nNo one was in the room, but half a bowl of warm water stood on the table. Shen Li left it untouched and walked around the table. A cabinet against the wall stood open, with account books neatly stacked on the lowest shelf as though they had been left for someone to find. Xu Zhao remained at the door and suggested checking behind the cabinet first. There she found a newly pasted sheet of paper on which the ink was not quite dry.\n\nThe paper bore a single line: Do not take the account books back to the mountain. There was no signature or sect seal. Shen Li recognized the shape of one character; it resembled Martial Uncle Du’s writing. He managed the herb store, but she had only seen him write the names of medicines and could not identify the hand from so little evidence. She folded the paper into her notebook to ask Master Zhou about it later.\n\nFog suddenly rose outside. Seeing Shen Li pause before the cabinet as her breathing quickened, Xu Zhao took out a Calming Talisman and gave it to her. She held it until her thoughts settled, then returned to the accounts. The corners of the paper gradually darkened before turning an ashen white. Xu Zhao put the spent paper aside rather than returning it to the bag beside the unused talisman.\n\nAn old plan of the station lay between the pages. It marked the rear courtyard and a windowless storeroom, but fresh ink had crossed out the path leading to the storeroom. Shen Li held the plan to the lamp and noticed marks on the reverse as well. Someone had written a name and blotted it out. Only the final stroke remained visible, too little to identify the person. She did not fill the illegible name into her notebook.\n\nFootsteps sounded in the rear courtyard. Shen Li set down the accounts, asked Xu Zhao to watch the entrance, and went to investigate. Xu Zhao waved a hand and stayed where he was. He set the lamp beside the threshold and lifted the fresh leaf from the crack in the board, revealing a short spike beneath it. If someone came running back from the courtyard, he would turn the board over before they stepped on it.\n\nThe courtyard contained only a dry well and a few empty medicine crates. Shen Li followed the footsteps to the well and noticed that one crate had a thicker bottom than the others. Instead of opening it immediately, she tapped twice and heard something rattle inside. Fog had hidden the way back, leaving the lamp at the entrance a blurred point of light. She called to Xu Zhao and waited for his answer before looking further.\n\nOne Calming Talisman remained unused in the pouch at her waist. She took it out, held it to steady her breathing, then dragged the crate to the well. A gust dispersed some of the fog and revealed a narrow gap in the bottom. A piece of sealing wax was caught in it, the same color as the wax routinely used in the sect’s herb store. She wrapped it carefully to take back with the account books.\n\nA dark figure approached from beside the storeroom. His face was covered, the clothing over his right shoulder soaked with rain, and he carried a narrow wooden case in his left hand. Shen Li could not see his face. She stepped to the far side of the well and asked why he was there. He glanced at the sealing wax in her hand without giving his name and said only that the case must reach Master Zhou, not anyone at the herb store.\n\nShen Li did not take the case. Knowing Master Zhou’s name was no guarantee that the stranger could be trusted. She asked him to place it on the edge of the well and take three steps back. He complied, warning her not to open it: the papers inside were poisoned, and touching them with bare hands would leave blue marks. Shen Li tore a strip from the hem of her clothing and secured the case with it, never touching the lid directly.\n\nShe recalled the unsigned note and the wax on the crate. Perhaps Martial Uncle Du was involved in the missing shipment, she thought. But similar handwriting and matching wax were not conclusive; others had access to the herb store as well. She recorded the two clues without writing the word traitor beside his name.\n\nThe stranger removed his face covering, revealing a wounded face. It was Lin Jing. Shen Li had met him twice and knew he was Master Zhou’s junior martial brother; she usually addressed him as Martial Uncle Lin. She let her hand fall from her sword hilt but did not immediately approach. His right shoulder was still bleeding, and he used the injured arm to guard the case as though afraid it might slip from the edge of the well.\n\nLin Jing said he had followed a medicine cart to the station. An attack along the way had driven him to cover his face and hide in the storeroom. He had not discovered who attacked him; he knew only that the herbs were not going to the clinic below the mountain. Xu Zhao came from the doorway and offered him the remaining medicine. Comparing the accounts with the old plan, the three found that the crossed-out path led to an abandoned kiln behind the mountain.\n\nShen Li wrapped the accounts, the wax, and the case separately. Once she was sure Lin Jing could walk unaided, she returned to the entrance for Xu Zhao. He still had the brass key. He locked the station again and handed it back to her. Both Calming Talismans had been used, so on the return journey she had only the lamp from the doorway to help her find the stone steps. Xu Zhao walked slowly, and she stayed beside him.\n\nThe three reached the mountain gate as dawn approached. A disciple on duty told Shen Li to report to the herb store first, but she insisted on seeing Master Zhou directly. Until the clues had been checked, the account books must not pass through another pair of hands. Master Zhou opened his door and, seeing the wound in Lin Jing’s shoulder, invited them in before asking about the accounts. Only then did Shen Li release the pouch she had been gripping and set the brass key on the table.",
+      "expected": {
+        "decision": "clean",
+        "rationale": "关系、术语、动作、事实强度与揭晓顺序均保留；已说明的称谓无需反复补译。"
+      }
+    }
+  ]
+}

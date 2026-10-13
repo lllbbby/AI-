@@ -1,0 +1,112 @@
+[
+  {
+    "id": "D01",
+    "shortTitle": "师叔关系",
+    "title": "师叔与亲叔",
+    "source": "周师叔把剑谱交给了我。",
+    "translation": "Uncle Zhou handed me the sword manual.",
+    "context": "周是我师父的师弟，与我没有血缘关系。这是他首次出场，前文尚未介绍这段师门关系。",
+    "label": "自拟对照",
+    "references": [
+      {
+        "title": "Wuxiaworld：武侠与仙侠称谓表",
+        "url": "https://www.wuxiaworld.com/page/wuxia-xianxia-terms-of-address",
+        "kind": "公开术语资料"
+      }
+    ]
+  },
+  {
+    "id": "D04",
+    "shortTitle": "头领称呼",
+    "title": "头领称呼可以用 Boss",
+    "source": "杜大哥招呼我坐下。",
+    "translation": "Boss Du asked me to sit down.",
+    "context": "杜某是帮会头领，大哥是成员对头领的称呼，成员之间无血缘关系。全书用 Boss 对应这个称呼。",
+    "label": "自拟对照",
+    "references": [
+      {
+        "title": "Wuxiaworld：武侠与仙侠称谓表",
+        "url": "https://www.wuxiaworld.com/page/wuxia-xianxia-terms-of-address",
+        "kind": "公开术语资料"
+      }
+    ]
+  },
+  {
+    "id": "D07",
+    "shortTitle": "心魔含义",
+    "title": "心魔被写成实体生物",
+    "source": "他深吸一口气，终于压下心魔。",
+    "translation": "He took a deep breath and subdued the creature living inside his heart.",
+    "context": "心魔指他因旧事产生的心理恐惧；本场景没有实体怪物、寄生或附身设定。",
+    "label": "自拟对照",
+    "references": [
+      {
+        "title": "Immortal Mountain：武侠、仙侠与玄幻术语表",
+        "url": "https://immortalmountain.wordpress.com/glossary/wuxia-xianxia-xuanhuan-terms/",
+        "kind": "公开术语资料"
+      }
+    ]
+  },
+  {
+    "id": "D09",
+    "shortTitle": "境界差异",
+    "title": "境界被跳升",
+    "source": "他已经是一名筑基修士。",
+    "translation": "He had already reached the Nascent Soul realm.",
+    "context": "本书明确设定炼气、筑基、金丹、元婴依次升阶。筑基对应 Foundation Establishment，元婴对应 Nascent Soul。",
+    "label": "自拟对照",
+    "references": [
+      {
+        "title": "Wuxiaworld：通用术语表",
+        "url": "https://www.wuxiaworld.com/page/general-glossary-of-terms/",
+        "kind": "公开术语资料"
+      }
+    ]
+  },
+  {
+    "id": "D11",
+    "shortTitle": "名字与编号",
+    "title": "编号被解释为出生排行",
+    "source": "沈七回到了宗族。",
+    "translation": "The Shen patriarch's seventh son returned to the clan.",
+    "context": "沈七是此人的宗族代号，七是登记编号，与父亲的生育顺序无关。",
+    "label": "自拟对照",
+    "references": [
+      {
+        "title": "Webnovel：《Cultivation Chat Group》读者评论",
+        "url": "https://www.webnovel.com/book/8299599706003805/reviews",
+        "kind": "读者反馈线索"
+      }
+    ]
+  },
+  {
+    "id": "D13",
+    "shortTitle": "推测语气",
+    "title": "推测被写成确定事实",
+    "source": "他想来已经死在城外了。",
+    "translation": "He had certainly died outside the city.",
+    "context": "这是人物没有证据的猜测，尚未确认死亡。",
+    "label": "自拟对照",
+    "references": []
+  },
+  {
+    "id": "D14",
+    "shortTitle": "退场原因",
+    "title": "退场原因被改写",
+    "source": "他因伤退场，并非因为畏惧。",
+    "translation": "He withdrew because he was afraid.",
+    "context": "受伤是退场原因，原文明确否定恐惧是原因。",
+    "label": "自拟对照",
+    "references": []
+  },
+  {
+    "id": "D16",
+    "shortTitle": "已知身份",
+    "title": "读者已知身份时的改写",
+    "source": "黑衣人放下长剑，露出面容。那是韩策。",
+    "translation": "Han Ce lowered his sword and revealed his face.",
+    "context": "上一段已经明确写出韩策披着黑衣走来，叙述者与读者都已知道身份。这里没有隐藏身份的悬念。",
+    "label": "自拟对照",
+    "references": []
+  }
+]

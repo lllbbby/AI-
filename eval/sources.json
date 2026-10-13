@@ -1,0 +1,38 @@
+[
+  {
+    "id": "address",
+    "title": "Wuxiaworld：武侠与仙侠称谓表",
+    "url": "https://www.wuxiaworld.com/page/wuxia-xianxia-terms-of-address",
+    "checkedAt": "2026-10-05",
+    "kind": "公开术语资料",
+    "pairs": [["师叔", "Martial Uncle"], ["师妹", "Junior Sister"], ["大哥", "Boss"], ["前辈", "Senior"]],
+    "note": "用于核对辈分、非血缘称呼和社会身份。资料也提醒：称呼不必然代表亲属关系，资历不只由年龄决定。"
+  },
+  {
+    "id": "cultivation",
+    "title": "Immortal Mountain：武侠、仙侠与玄幻术语表",
+    "url": "https://immortalmountain.wordpress.com/glossary/wuxia-xianxia-xuanhuan-terms/",
+    "checkedAt": "2026-10-05",
+    "kind": "公开术语资料",
+    "pairs": [["修士", "Cultivator"], ["心魔", "Internal Demons"], ["丹田", "Dantian"]],
+    "note": "用于区分修炼者、心理障碍和身体中的能量位置。词义仍须服从具体作品设定。"
+  },
+  {
+    "id": "realm",
+    "title": "Wuxiaworld：通用术语表",
+    "url": "https://www.wuxiaworld.com/page/general-glossary-of-terms/",
+    "checkedAt": "2026-10-05",
+    "kind": "公开术语资料",
+    "pairs": [["筑基", "Foundation Establishment"], ["筑基", "Foundation Building"], ["元婴", "Nascent Soul"], ["江湖", "Jianghu"], ["黄泉", "Yellow Springs"]],
+    "note": "用于核对境界、约定译名和地名的字面含义。此页部分内容转载自 Immortal Mountain，不作为独立的交叉证明。"
+  },
+  {
+    "id": "reader-names",
+    "title": "Webnovel：《Cultivation Chat Group》读者评论",
+    "url": "https://www.webnovel.com/book/8299599706003805/reviews",
+    "checkedAt": "2026-10-05",
+    "kind": "读者反馈线索",
+    "pairs": [["Ah Qi", "Su Clan's Seven"]],
+    "note": "评论反映读者对译名变化的困惑。未核对完整原文与历版译文，不据此判定某一公开译文错误，也不推断人物的出生排行。"
+  }
+]
